@@ -1,23 +1,49 @@
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
 body {
-  background-color: rgb(170, 150, 85);
+  background-color: #fafafa;
   font-family: "Roboto", sans-serif;
   max-width: 1024px;
   margin: 0 auto;
   height: 100%;
   font-size: 1.25rem;
   padding: 0 5%;
+  background-image: linear-gradient(
+    to right,
+    #aa9655 0%,
+    #fafafa 20%,
+    #fafafa 80%,
+    #aa9655 100%
+  );
 }
 
-header {
+img {
+  width: 50%;
+}
+
+.smallPortrait {
+  width: 85px;
+  border: solid #aa9655;
+  border-radius: 25%;
+}
+
+nav {
+  overflow: hidden;
   color: #aa9655;
   background-color: #783241;
   position: sticky;
-  top: 0px;
-  display: block;
+
+  top: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 5vh;
+
+  text-transform: uppercase;
 }
 
 main {
@@ -26,13 +52,12 @@ main {
 
 h1,
 h2 {
-  /* color: rgb(120, 50, 65); */
-  color: #451D26;
+  color: #451d26;
 }
 
 p {
   font-family: "Poppins", sans-serif;
-  color: #5E532F;
+  color: #5e532f;
   font-size: 16px;
 }
 
@@ -46,14 +71,4 @@ ul {
   list-style-type: none;
   display: flex;
   justify-content: flex-end;
-}
-
-#myFirstWeb {
-  color: rgb(172, 148, 83);
-  text-shadow: 1px 1px rgb(0, 0, 0);
-}
-
-#myFirstWeb:hover {
-  color: hsl(0, 0%, 95%);
-  background-color: rgb(118, 50, 63);
 }
