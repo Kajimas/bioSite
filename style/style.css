@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(170, 150, 85);
+  font-family: "Roboto", sans-serif;
+  max-width: 1024px;
+  margin: 0 auto;
+  height: 100%;
+  font-size: 1.25rem;
+  padding: 0 5%;
+}
+
+header {
+  color: #aa9655;
+  background-color: #783241;
+  position: sticky;
+  top: 0px;
+  display: block;
+}
+
+main {
+  display: block;
+}
+
+h1,
+h2 {
+  /* color: rgb(120, 50, 65); */
+  color: #451D26;
+}
+
+p {
+  font-family: "Poppins", sans-serif;
+  color: #5E532F;
+  font-size: 16px;
+}
+
+a {
+  color: inherit;
+  padding: 10px;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#myFirstWeb {
+  color: rgb(172, 148, 83);
+  text-shadow: 1px 1px rgb(0, 0, 0);
+}
+
+#myFirstWeb:hover {
+  color: hsl(0, 0%, 95%);
+  background-color: rgb(118, 50, 63);
+}
