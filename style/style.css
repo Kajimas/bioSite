@@ -20,6 +20,8 @@ body {
 
 img {
   width: 50%;
+  border: solid #783241;
+  border-radius: 15px;
 }
 
 .smallPortrait {
@@ -27,6 +29,11 @@ img {
   border: solid #aa9655;
   border-radius: 25%;
   margin: 15px 0 15px 0;
+}
+
+
+.selectedPage{
+ color: #fafafa;
 }
 
 nav {
