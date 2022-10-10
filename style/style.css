@@ -12,14 +12,14 @@ body {
   background-image: linear-gradient(
     to right,
     #aa9655 0%,
-    #fafafa 20%,
-    #fafafa 80%,
+    #fafafa 5%,
+    #fafafa 95%,
     #aa9655 100%
   );
 }
 
 img {
-  width: 50%;
+  width: 100%;
   border: solid #783241;
   border-radius: 15px;
 }
@@ -29,23 +29,24 @@ img {
   border: solid #aa9655;
   border-radius: 25%;
   margin: 15px 0 15px 0;
+  display: none;
 }
 
-
-.selectedPage{
- color: #fafafa;
+.selectedPage {
+  color: #fafafa;
 }
 
 nav {
   overflow: hidden;
   color: #aa9655;
-  background-color: #783241;
+  background-color: #451d26;
+  border-bottom: solid #783241;
   position: sticky;
   top: 0;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  min-height: 6vh;
+  min-height: 75px;
   text-transform: uppercase;
 }
 
@@ -67,7 +68,7 @@ p {
   font-size: 16px;
 }
 
-.img-caption{
+.img-caption {
   font-style: italic;
 }
 
@@ -85,4 +86,34 @@ ul {
 
 footer {
   margin-top: 10%;
+}
+
+@media (min-width: 550px) {
+  body {
+    background-image: linear-gradient(
+      to right,
+      #aa9655 0%,
+      #fafafa 15%,
+      #fafafa 85%,
+      #aa9655 100%
+    );
+  }
+  img {
+    width: 50%;
+  }
+  .smallPortrait {
+    display: flex;
+  }
+}
+
+@media (min-width: 1050px) {
+  body {
+    background-image: linear-gradient(
+      to right,
+      #aa9655 0%,
+      #fafafa 25%,
+      #fafafa 75%,
+      #aa9655 100%
+    );
+  }
 }
